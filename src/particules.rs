@@ -38,7 +38,7 @@ fn unif_gen(nb: usize) -> Vec<Particule> {
             vx = rng.gen_range(-1., 1.);
             vy = rng.gen_range(-1., 1.);
             vz = rng.gen_range(-1., 1.);
-            if x * x + y * y + z * z < 1. {
+            if vx * vx + vy * vy + vz * vz < 1. {
                 break;
             }
         }
